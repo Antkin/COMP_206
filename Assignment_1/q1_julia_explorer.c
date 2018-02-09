@@ -29,8 +29,8 @@ int main(int argc, char *argv[]){
 
     //Here I copy argv[2] and argv[3] into a larger piece
     //of memory, and add the new line modifier to the end
-    strcpy(replace_A, argv[2]);
-    strcpy(replace_B, argv[3]);
+    sprintf(replace_A, "%.6f" ,atof(argv[2]));
+    sprintf(replace_B, "%.6f" ,atof(argv[3]));
 
     strcat(replace_A, new_line);
     strcat(replace_B, new_line);
